@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HW2</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <section id="about">
+      <h3 id="h3about">IMAGES MAPS</h3>
+      <div class="container">
+        <div>
+          <h5 id="h5left">
+            Click on the SİNK, the PHONE, or the COFFEE CUP to go to related
+            image.
+          </h5>
+        </div>
+
+        <img
+          src="../Images/images.jpg"
+          alt=""
+          class="img-fluid mt100"
+          alt="Workplace"
+          usemap="#workmap"
+        />
+
+        <map name="workmap">
+          <area
+            shape="rect"
+            coords="970,200,1174,649"
+            alt="freezer"
+            href="../Images/freezer.jpg"
+            onclick="freezerFunction()"
+          />
+          <area
+            shape="rect"
+            coords="510,372,694,492"
+            alt="sink"
+            href="../Images/sink.jpeg"
+            onclick="sinkFunction()"
+          />
+          <area
+            shape="rect"
+            coords="280,285,325,336"
+            alt="Cup"
+            href="../Images/cupofcoffee.jpeg"
+            onclick="coffeeCupFunction()"
+          />
+        </map>
+
+        <script>
+          function coffeeCupFunction() {
+            alert("You clicked the Coffee Cup!");
+          }
+
+          function freezerFunction() {
+            alert("You clicked the Freezer!");
+          }
+
+          function sinkFunction() {
+            alert("You clicked the Sink!");
+          }
+        </script>
+      </div>
+    </section>
+  </body>
+</html>
